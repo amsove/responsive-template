@@ -1,0 +1,311 @@
+/*
+
+File Name: style.less
+Date: 08/01/19
+Programmer: Amber Vejraska
+
+*/
+
+html, body * {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Mukta', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	background-color: #ff0000;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #222222;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	font-family: 'Mukta', sans-serif;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	color: #ff0000;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+	display: none;
+}
+
+/* Display slideshow on Tablet and Desktop views  */
+
+/* Slideshow container */
+.slideshow-container {
+	position: relative;
+	margin: auto;
+	padding-top: .5em;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 30px;
+	font-family: 'Mukta', sans-serif;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.static-image {
+	padding-top: .25em;
+}
+
+.static-image {
+	display: none;
+}
+
+.slideshow-container {
+	display: block;
+}
+
+h2 {
+	font-family: 'Mukta', sans-serif;
+	font-size: 23px;
+	text-shadow: 0 0 3px #FF0000;
+	padding-bottom: .5em;
+	padding-top: .25em;
+}
+
+.article {
+	font-family: 'Roboto', sans-serif;
+	padding: 0.01em 10px;
+	background-color: #eeeeee;
+	color: #222222;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	margin-top: 1%;
+	margin-bottom: 1.5%;
+}
+
+/*  Footer  */
+
+footer {
+	background-color: #222222;
+	color: #f2f2f2;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}  
+
+/*  Footer Sections  */
+.section {
+	clear: both;
+	padding: 8px;
+	margin: 0px;
+}
+
+/*  Footer Column Setup  */
+.col {
+	display: block;
+	float: left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+	margin-left: 0;
+}
+
+/*  Footer Grouping  */
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+ /* For IE 6/7 */
+	;
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+
+.span_2_of_3 {
+	width: 66.13%;
+}
+
+.span_1_of_3 {
+	width: 32.26%;
+}
+
+
+/*  MOBILE BREAK POINT FOR STATIC IMAGE AND STACKED FOOTER */
+
+/* The following CSS affects all screen sizes smaller than 480 pixels wide */
+
+@media only screen and (max-width: 480px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 {
+		width: 100%;
+	}
+
+	.static-image {
+		display: block;
+	}
+
+	.slideshow-container {
+		display: none;
+	}
+}
+
+
+/* TABLET STYLESHEET */
+
+/* The following CSS affects all screen sizes smaller than 768 pixels wide */
+
+@media only screen and (max-width: 768px) {
+
+/* Displays hamburger nav on all screen sizes smaller than 768 pixels wide */ 
+    
+    /* Hides all links except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+    
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */  
+    
+	.topnav.responsive {
+		position: relative;
+	}
+
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+  
+/* DESKTOP STYLESHEET */
+
+/* The following CSS affects all screen sizes larger than 1024 pixels wide */
+
+@media only screen and (min-width: 1025px) {
+	body {
+		font-size: 22px;
+	}
+    
+/* Style the links inside the navigation bar */
+	.topnav a {
+		font-size: 22px;
+	}
+
+	.article {
+		font-size: 19px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+/* Footer */
+
+	footer {
+		font-size: 19px;
+	}
