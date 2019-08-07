@@ -1,6 +1,6 @@
 /*
 
-File Name: style.less
+File Name: style.css
 Date: 08/01/19
 Programmer: Amber Vejraska
 
@@ -146,7 +146,6 @@ body {
 h2 {
 	font-family: 'Mukta', sans-serif;
 	font-size: 23px;
-	text-shadow: 0 0 3px #FF0000;
 	padding-bottom: .5em;
 	padding-top: .25em;
 }

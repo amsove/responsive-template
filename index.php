@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <!-- Author:   Amber Vejraska 
-               Date: 07/16/19
+               Date: 08/07/19
                Purpose: HTML Template -->
 
 <html lang="en">
@@ -15,9 +15,7 @@
 
     <meta name="description" content="description">
 
-    <!-- LESS Compliler -->
-    <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+
     
     <!-- Hamburger Menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
